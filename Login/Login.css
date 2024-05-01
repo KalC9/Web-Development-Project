@@ -1,0 +1,25 @@
+.container {
+    text-align: center;
+    display: flex;
+    margin: 0;
+    text-align: center;
+}
+
+.content {
+    color: aliceblue;
+    margin: 0 auto;
+    width: 50%; 
+    background-color: rgb(8, 5, 5); 
+    padding: 20px; 
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.content form p input{
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 5px;
+    padding:5px;
+    border-color: aliceblue;
+    border-width: 2px;
+}
