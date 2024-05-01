@@ -1,5 +1,5 @@
 *{
-    font-size: x-large;
+    font-size:large;
 }
 
 .container {
@@ -9,10 +9,6 @@
     display: flex;
     
     text-align: center;
-}
-
-input[type="text"] {
-    color: white; /* Color of the inputted text */
 }
 
 .content {
@@ -26,10 +22,26 @@ input[type="text"] {
 }
 
 .content form p input{
+    width: 30%;
     background-color: black;
     opacity: 0.8;
     border-radius: 5px;
-    padding:5px;
+    padding:10px;
+    border-color: aliceblue;
+    border-width: 2px;
+    
+}
+
+input[type="text"] {
+    color: white; /* Color of the inputted text */
+}
+
+.content form p textarea{
+    width: 62%;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 5px;
+    padding:10px;
     border-color: aliceblue;
     border-width: 2px;
 }
@@ -51,7 +63,7 @@ content button img{
 
 }
 
-#logIn{
+#SignUp{
     background-color: rgb(46, 45, 45);
     border-radius: 10px;
     color: aliceblue;
