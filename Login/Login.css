@@ -35,15 +35,26 @@ input[type="text"] {
 }
 
 .content button{
+    text-align: center;
     background-color: aliceblue;
     border-radius: 5px;
     padding: 5px;
-    text-align: justify;
     
 }
 
+button a{
+    text-decoration: none;
+    color: rgb(1, 9, 16);
+}
+button a:hover{
+    color:rgb(2, 34, 34);
+}
+
+
+
 content button img{
     display: inline-block;
+
 }
 
 #signIn div{
@@ -64,3 +75,79 @@ content button img{
 
 
 
+
+
+
+
+
+
+
+
+.navbar{
+    min-width: 1000px;
+    margin:0;
+    padding:8px 5px 8px 5px;
+    opacity: 1S;
+    color: rgb(3, 28, 50);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#logo img{
+    width: 30px;
+    
+}
+
+#navBtn2 img{
+    width:50px;
+}
+
+#navBtn1 button{
+    background-color: rgb(0, 0, 30);
+    filter:opacity(0.6);
+    padding: 5px;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    text-align: center;
+    width: 150px;
+    border-color: azure;
+    border-radius: 10px;
+}
+
+#navBtn1 button:hover{
+    background-color: brown;
+    color: beige;
+    font-style:oblique;
+}
+
+#navBtn1{
+    
+    display:inline-block;
+    font-size:xx-large;
+}
+
+#navBtn2 button{
+    padding:5px;
+    background-color: transparent;
+    border-color: rgb(255, 255, 255);
+    color: aliceblue;
+    text-align: center;
+    width: 150px;
+    border-radius: 10px;
+}
+
+#navBtn2 button:hover{
+    background-color: rgb(6, 65, 80);
+    color: beige;
+    font-style:oblique;
+}
+
+#navBtn2{
+    float:right;
+    display:inline-block;
+    font-size:xx-large;
+}
+
+#logo{
+    display:inline-block;
+}
