@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: floralwhite;
+}
+/*
+.topnav{
+    overflow: hidden;
+    background-color: rgb(255, 232, 192);
+}
+
+.topnav ul{
+    display: inline-block;
+}
+.topnav ul li{
+    display: inline-block;
+    list-style: none;
+}
+.topnav a{
+    float: left;
+    color: rgb(96, 54, 54);
+    text-decoration: none;
+    padding: 6px 14px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.topnav ul.split{
+    float: right;
+    
+}
+
+/* submenu styles for navigation bar
+
+.topnav ul .submenu{
+    position: absolute;
+    width: 200px;
+    background-color: rgb(255, 232, 192);
+    box-shadow: 0 20px 45px #00000020;
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;*/
+
+
+nav{
+    height: 60px;
+    background: #fff5cb;
+
+  }
+
+.leftnavigation{
+    float: left;
+    margin-right: 30px;
+}
+  
+.rightnavigation{
+    
+  float: right;
+  margin-left: 750px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color: rgb(69, 43, 43);
+    display: block;
+    padding: 0 15px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    transition: .5s;
+    text-decoration: none;
+}
+ 
+nav ul .submenu{
+    position: absolute;
+    top: 85px;
+    
+    opacity: 0;
+    visibility: hidden;
+    
+ }
+  
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+    
+    
+}
+  nav ul .submenu li{
+    width: 240px;
+    display: list-item;
+    position: relative;
+    margin: 5px;
+    border-top: none;
+    list-style: none;
+    background-color: #fff5cb;
+   
+  }
+  nav ul .submenu li a{
+    line-height: 50px;
+    text-decoration: none;
+  }
+
+  .slider-frame{
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    margin-left: 360PX;
+    margin-top: 20px;
+  }
+
+  /* ------------- SLIDE ANIMATION ------------ */
+
+  @-webkit-keyframes slide_animation{
+    0% {left: 0px;}
+    10% {left: 0px;}
+    20% {left: 1200px;}
+    30% {left: 1200px;}
+    40% {left: 2400px;}
+    50% {left: 1200px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    0% {left: 0px;}
+  }
+
+  .slide-images{
+    width: 360px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+  }
+
+  .image-container{
+    height: 500px;
+    width: 120px;
+    position: relative;
+    float: left;
+  }
+
+  /* --------------- END OF ANIMATION PART ---------------*/
