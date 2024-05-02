@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+}
+
+body {
+    width: auto;
+    height: 100%;
+}
+
+
+/*------------------------    nav bar  -----------------------------------------*/
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F2E8DD;
+  }
+  
+ nav ul li {
+    float: left;
+  }
+  
+  li a {
+    margin-left: 5px;
+    display: block;
+    color: #352E28;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-style: italic;
+    
+  }
+  
+  .active{
+    margin-right: 10px;
+  }
+
+
+  
+  
+
+  /*----------------------------- TILE  -------------------------------------------*/
+
+
+  .cat h1{
+    text-align: center;
+    color: #E5AF52;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+
+  .img1{
+    width: 380px;
+    height: 380px;
+    
+  }
+
+  .cat_sub{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 30px;
+  }
+
+  .cat_sub_text{
+    margin-left: 25px;
+  }
+
+  .cat_sub_text ul {
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+  
+
+  .cat_sub_text ul li{
+    color: #706c69;
+    font-size: 20px;
+    padding: 2px;
+  }
+
+
+  /*-----------------------------------   quantity     -----------------------------------------*/
+  
+  .quantity{
+    display: flex;
+    margin-left: 120px;
+    margin-top: 30px;
+  }
+
+  .btn{
+    width: 25px;
+    height: 25px;
+   
+  }
+
+  .quantity-input{
+    width: 50px;
+    text-align: center;
+  }
+  
+/*-------------------------------    button   ----------------------------------------------------*/
+
+.buttons{
+    margin-left: 120px;
+    margin-top: 70px;
+}
+
+.btn1{
+    margin-right: 25px;
+    width: 200px;
+    height: 40px;
+    background-color: #E4CA9D;
+    border-color: #E4CA9D;
+}
+
+.btn2{
+    width: 200px;
+    height: 40px;
+    background-color: #EFD6BA;
+    border-color: #EFD6BA;
+}
+
+.btn1:hover{
+  background-color: #e6d2b1;
+  border-color: #9e9b94;
+}
+
+.btn2:hover{
+    background-color: #f0e1d0;
+    border-color: #9e9b94;
+}
