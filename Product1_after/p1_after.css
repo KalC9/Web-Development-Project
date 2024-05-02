@@ -10,33 +10,143 @@ body {
 
 /*------------------------    nav bar  -----------------------------------------*/
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #F2E8DD;
-  }
-  
- nav ul li {
-    float: left;
-  }
-  
-  li a {
-    margin-left: 5px;
-    display: block;
-    color: #352E28;
-    text-align: center;
-    padding: 20px 16px;
-    text-decoration: none;
-    font-style: italic;
-    
-  }
-  
-  .active{
-    margin-right: 10px;
-  }
 
+.mobile-menu-btn {
+    display: none;
+}
+
+:root {
+    --menu-count: 6;
+}
+
+.header-main {
+    width: 100%;
+    padding: 0 30px;
+    height: 60px;
+    background-color: #fffdd2;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.header-main nav {
+    display: flex;
+}
+
+.header-main .logo {
+    height: 40px;
+    width: fit-content;
+    align-self: center;
+    cursor: pointer;
+}
+
+.header-main ul {
+    height: 100%;
+    padding-left: 40px;
+    list-style: none;
+    display: flex;
+    align-self: center;
+}
+
+.header-main ul li {
+    position: relative;
+    background-color: #fffdd2;
+
+}
+
+.header-main ul li a {
+    display: block;
+    padding: 0 15px;
+    height: 100%;
+    line-height: 60px;
+    font-size: 1rem;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* DROPDOWN STYLING START */
+
+.header-main ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    position: absolute;
+    left: -40px;
+    transition: all ease-in-out 100ms;
+
+}
+
+.header-main ul li ul li a {
+    white-space: nowrap;
+}
+
+.header-main ul li ul li {
+    margin: 5px;
+    width: 250px;
+    height: 40px;
+    text-align: left;
+    padding: 0px 25px 15px 4px;
+}
+
+ul li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+
+}
+
+/* DROPDOWN STYLING END */
+
+.header-main .left-menu {}
+
+.header-main .search {
+    align-self: center;
+    display: flex;
+    margin-right: 50px;
+}
+
+.header-main form {
+    height: 35px;
+    padding-right: 0px;
+    display: flex;
+    border: 1px solid #AEAEAE;
+    border-radius: 30px 30px 30px 30px;
+    width: fit-content;
+    align-self: center;
+}
+
+.header-main form input {
+    height: 32px;
+    width: 170px;
+    padding: 0 10px 0 10px;
+    border-radius: 0px 30px 30px 0px;
+    font-size: 1rem;
+}
+
+.header-main form input:focus {
+    border: 1px solid #111;
+}
+
+.header-main form button {
+    border-radius: 30px 0px 0px 30px;
+}
+
+.header-main form button img {
+    height: 24px;
+    padding-top: 15%;
+    cursor: pointer;
+
+}
+
+.header-main .account {
+    height: 60px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
 
   
   
@@ -47,9 +157,9 @@ nav ul {
   .cat h1{
     text-align: center;
     color: #E5AF52;
-    margin-top: 50px;
+    margin-top: 120px;
     margin-bottom: 50px;
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .img1{
@@ -133,6 +243,35 @@ nav ul {
 }
 
 
+
+/*-------------------------------    recomended   ----------------------------------------------------*/
+
+.recommend{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.recommend h1{
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    color: #E5AF52;
+    font-size: 30px;
+    text-align: center;
+}
+
+.recommond_sub{
+    justify-content: center;
+    display: flex;
+    
+    text-align: center;
+}
+
+.recommond_sub ul{
+    list-style: none;
+}
+
+
 /*------------------------------    footer      --------------------------------------------*/
 
 .main_footer{
@@ -165,15 +304,20 @@ nav ul {
 .follow{
     color: #3f3d3b;
     margin-left: 60px;
+    margin-bottom: 20px;
 }
 
 .mid{
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 200px;
+    padding-right: 200px;
     
 }
 
 .mid ul li{
     padding-top: 8px;
     color: #3f3d3b;
+}
+
+footer{
+    justify-content: center;
 }
