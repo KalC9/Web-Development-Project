@@ -263,7 +263,6 @@ ul li:hover>ul {
 .recommond_sub{
     justify-content: center;
     display: flex;
-    
     text-align: center;
 }
 
@@ -271,6 +270,19 @@ ul li:hover>ul {
     list-style: none;
 }
 
+.back1{
+    margin-top: 70px;
+}
+
+.back2{
+    margin-top: 70px;
+    rotate: 180deg;
+}
+
+.back-btn{
+    border: none;
+    background-color: #ffffff;
+}
 
 /*------------------------------    footer      --------------------------------------------*/
 
