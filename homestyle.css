@@ -418,22 +418,7 @@ ul li:hover>ul {
     }
 
 
-    /* Image slider styles start */
-
-    .img-slider {
-        width: 500px;
-        height: 300px;
-
-    }
-
-    .img-slider .slide .info {
-        padding: 10px 25px;
-
-    }
-
-    .image-slider .slide .info. h2 {
-        font-size: 35px;
-    }
+    
 
 
 }
