@@ -131,3 +131,49 @@ nav ul {
     background-color: #f0e1d0;
     border-color: #9e9b94;
 }
+
+
+/*------------------------------    footer      --------------------------------------------*/
+
+.main_footer{
+    display: flex;
+    margin-top: 200px;
+    background-color: #e6ddd0;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    
+}
+
+.main_footer ul{
+    list-style: none;
+}
+
+.left ul li{
+    padding-top: 8px;
+    color: #3f3d3b;
+}
+
+.right{
+    
+    margin-top: 30px;
+}
+
+.right ul {
+    display: flex;   
+}
+
+.follow{
+    color: #3f3d3b;
+    margin-left: 60px;
+}
+
+.mid{
+    padding-left: 120px;
+    padding-right: 120px;
+    
+}
+
+.mid ul li{
+    padding-top: 8px;
+    color: #3f3d3b;
+}
