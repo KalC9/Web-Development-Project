@@ -1,154 +1,366 @@
-body{
+body {
     margin: 0;
-    padding: 0;
-    background-color: floralwhite;
-}
-/*
-.topnav{
-    overflow: hidden;
-    background-color: rgb(255, 232, 192);
 }
 
-.topnav ul{
-    display: inline-block;
-}
-.topnav ul li{
-    display: inline-block;
-    list-style: none;
-}
-.topnav a{
-    float: left;
-    color: rgb(96, 54, 54);
-    text-decoration: none;
-    padding: 6px 14px;
-    font-style: italic;
-    font-weight: 500;
+.mobile-menu-btn {
+    display: none;
 }
 
-.topnav ul.split{
-    float: right;
-    
+:root {
+    --menu-count: 6;
 }
 
-/* submenu styles for navigation bar
-
-.topnav ul .submenu{
-    position: absolute;
-    width: 200px;
-    background-color: rgb(255, 232, 192);
-    box-shadow: 0 20px 45px #00000020;
-    margin-top: -50px;
-    opacity: 0;
-    z-index: -999;
-    transition: all ease 0.5s;*/
-
-
-nav{
+.header-main {
+    width: 100%;
+    padding: 0 30px;
     height: 60px;
-    background: #fff5cb;
-
-  }
-
-.leftnavigation{
-    float: left;
-    margin-right: 30px;
+    background-color: #fffdd2;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
-  
-.rightnavigation{
+
+.header-main nav {
+    display: flex;
+}
+
+.header-main .logo {
+    height: 40px;
+    width: fit-content;
+    align-self: center;
+    cursor: pointer;
+}
+
+.header-main ul {
+    height: 100%;
+    padding-left: 40px;
+    list-style: none;
+    display: flex;
+    align-self: center;
+}
+
+.header-main ul li {
+    position: relative;
+    background-color: #fffdd2;
     
-  float: right;
-  margin-left: 750px;
 }
 
-nav ul li{
-    display: inline-block;
-}
-
-nav ul li a{
-    color: rgb(69, 43, 43);
+.header-main ul li a {
     display: block;
     padding: 0 15px;
-    line-height: 30px;
-    font-size: 18px;
-    font-weight: 600;
-    font-style: italic;
-    transition: .5s;
+    height: 100%;
+    line-height: 60px;
+    font-size: 1rem;
+    color: #000000;
+    text-transform: uppercase;
     text-decoration: none;
 }
- 
-nav ul .submenu{
-    position: absolute;
-    top: 85px;
-    
-    opacity: 0;
+
+/* DROPDOWN STYLING START */
+
+.header-main ul li ul {
     visibility: hidden;
-    
- }
-  
-nav ul li:hover > ul{
-    top: 70px;
-    opacity: 1;
-    visibility: visible;
-    transition: .3s linear;
-    
+    opacity: 0;
+    display: none;
+    position: absolute;
+    left: -40px;
+    transition: all ease-in-out 100ms;
     
 }
-  nav ul .submenu li{
-    width: 240px;
-    display: list-item;
-    position: relative;
+
+.header-main ul li ul li a {
+    white-space: nowrap;
+}
+
+.header-main ul li ul li{
     margin: 5px;
-    border-top: none;
-    list-style: none;
-    background-color: #fff5cb;
+    width: 250px;
+    height: 40px;
+    text-align: left;
+    padding: 0px 25px 15px 4px;
+}
+
+ul li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    
+}
+
+/* DROPDOWN STYLING END */
+
+.header-main .left-menu {
    
-  }
-  nav ul .submenu li a{
-    line-height: 50px;
-    text-decoration: none;
-  }
+}
 
-  .slider-frame{
-    overflow: hidden;
-    height: 800px;
-    width: 1200px;
-    margin-left: 360PX;
-    margin-top: 20px;
-  }
+.header-main .search {
+    align-self: center;
+    display: flex;
+    margin-right: 50px;
+}
 
-  /* ------------- SLIDE ANIMATION ------------ */
+.header-main form {
+    height: 35px;
+    padding-right: 0px;
+    display: flex;
+    border: 1px solid #AEAEAE;
+    border-radius: 30px 30px 30px 30px;
+    width: fit-content;
+    align-self: center;
+}
 
-  @-webkit-keyframes slide_animation{
-    0% {left: 0px;}
-    10% {left: 0px;}
-    20% {left: 1200px;}
-    30% {left: 1200px;}
-    40% {left: 2400px;}
-    50% {left: 1200px;}
-    60% {left: 1200px;}
-    70% {left: 1200px;}
-    80% {left: 0px;}
-    90% {left: 0px;}
-    0% {left: 0px;}
-  }
+.header-main form input {
+    height: 35px;
+    width: 170px;
+    padding: 0 10px 0 10px;
+    border-radius: 0px 30px 30px 0px;
+    font-size: 1rem;
+}
 
-  .slide-images{
-    width: 360px;
-    height: 800px;
-    margin: 0 0 0 -2400px;
-    position: relative;
-    -webkit-animation-name: slide_animation;
-    -webkit-animation-duration: 33s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-play-state: running;
-  }
+.header-main form input:focus {
+    border: 1px solid #111;
+}
 
-  .image-container{
-    height: 500px;
-    width: 120px;
-    position: relative;
-    float: left;
-  }
+.header-main form button {
+    border-radius: 30px 0px 0px 30px;
+}
 
-  /* --------------- END OF ANIMATION PART ---------------*/
+.header-main form button img {
+    height: 24px;
+    padding-top: 15%;
+    cursor: pointer;
+    
+}
+
+.header-main .account {
+    height: 60px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .header-main {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+        justify-content: right;
+        height: 65vh;
+        width: 100%;
+        height: 32px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 200;
+        background-color: #fffdd2;
+        
+    }
+
+    .mobile-logo {
+        align-self: left;
+    }
+
+    .mobile-menu-btn #menuBtn {
+        display: inline;
+        height: 80%;
+        align-self: center;
+       
+       
+    }
+
+
+    .mobile-menu-btn #closeBtn {
+        display: none;
+        height: 80%;
+        align-self: center;
+        
+        
+    }
+
+
+    .header-main {
+        height: 100vh;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0;
+        justify-content: flex-start;
+        overflow-y: scroll;
+    }
+
+    .header-main nav {
+        width: 100%;
+        height: 65vh;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: stretch;
+        overflow-y: scroll;
+    }
+
+    .header-main .logo {
+        height: 30%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-main .logo img {
+        height: 60%;
+        align-self: center;
+    }
+
+    .header-main ul {
+        height: 70%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-between;
+        
+    }
+
+    .header-main ul li {
+        width: 100%;
+        height: calc(100% / var(--menu-count));
+        padding: 0;
+        margin: 0;
+        /* Giving all menu items a border on top */
+        border-top: 1px solid #ddd;
+        /* We set a flex here, with nowrap and column, to make
+        the dropdown go below the Products, and justify-content 
+        instead since we are using column, to center the text */
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        transition: all ease-in-out 100ms;
+    }
+
+    .header-main ul li:nth-last-child(1) {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .header-main ul li a {
+        width: 100%;
+        height: fit-content;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .header-main ul li a:hover {
+        background-color: #bbb985;
+    }
+
+    .header-main nav {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .header-main ul li ul {
+        
+        display: none;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left:0;
+        z-index: 2000;
+        
+    }
+
+    .header-main ul li ul li {
+        height: fit-content;
+        width: 100%;
+        display: block;
+        border: none;
+       
+    }
+
+    .header-main ul li ul li a:hover {
+        background-color: #fffdd2;
+    }
+
+    .header-main ul li:focus>ul,
+    .header-main ul li:hover>ul {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    .header-main .search {
+        width: 100%;
+        height: 35vh;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+
+    .header-main form {
+        padding-right: 0;
+        width: 70%;
+        height: 15%;
+    }
+
+    .header-main form input {
+        width: 100%;
+        height: 93%;
+        padding: 0 10px 0 10px;
+        font-size: 1.6rem;
+    }
+
+    .header-main form button {
+        padding: 0 5%;
+    }
+
+    .header-mainform button img {
+        height: 5vh;
+        padding-top: 15%;
+    }
+
+    .header-main .account {
+        height: 50%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .header-main .account ul {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    .header-main .account ul li {
+        width: 100%;
+        height: 50%;
+        padding: 0;
+        margin: 0;
+        border: none;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+
+
+}

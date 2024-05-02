@@ -1,49 +1,61 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
 
-<link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="homeStyle.css">
 </head>
-
 <body>
 
-    
-
-       <nav>
+    <div class="mobile-menu-btn">
         
-        <ul class="leftnavigation">
-            <li> <img src="" alt="Logo"> </li>
-           <li> <a class="active" href="#"> HOME </a> </li>
-           <li> <a href="#"> PRODUCTS </a>
-              <ul class="submenu">
-                 <li><a href="#">Tile collection</a></li>
-                 <li><a href="#">Bathware collection</a></li>
-                 <li><a href="#">Accesseries collection</a></li>
-              </ul>
-           </li>
-           <li> <a href="#"> ABOUT US </a> </li>
-        <ul class="rightnavigation">
-                       <li> <a href="#"> SIGNUP </a> </li>
-                       <li> <a href="#"> LOGIN </a> </li>
-        </ul>
-                 
-     </nav>
+        <img src="homeImages/menu.png" alt="mobile-menu-button" id="menuBtn">
+            <img src="homeImages/cross.png" alt="cross-button" id="closeBtn">
+       
+    </div>
+    
+    <header class="header-main">
+        <nav>
+            <a  href="Home.html" class="logo">
+                <img src="" alt="websiteLogo">
+            </a>
+            <ul>
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="#">PRODUCTS</a>
+                    <ul>
+                        <li><a href="">Tile collection</a></li>
+                        <li><a href="">Bathware collection</a></li>
+                        <li><a href="">Accesseries collection</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ABOUT US</a></li>
+                
+            </ul>
 
-     <div class="slider-frame">
+        </nav>
 
-         <div class="slide-images">
+        <div clas="left-menu">
+            <div class="search">
+                <form action="" method="post">
+                    <button type="submit"><img src="homeImages/search.png"></button>
+                    <input type="text" name="search">
+                    
+                </form>
 
-            <div class="image-container">
-               <img src="home-images/slideImage1.jpeg">
+                <div class="account">
+                    <ul>
+                        <li><a href="#">LOGIN</a></li>
+                        <li><a href="#">SIGNUP</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="image-container">
-               <img src="home-images/slideImage2.jpeg">
-            </div>
-            <div class="image-container">
-               <img src="home-images/slideImage3.jpeg">
-            </div>
 
-         </div>
-     </div>
+        </div>
+    </header>
+
 </body>
+
+<script src="js/mobile-nav.js"></script>
 </html>
