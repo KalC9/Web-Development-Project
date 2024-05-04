@@ -1,0 +1,208 @@
+/*Top navigation bar CSS START*/
+.mobile-menu-btn {
+    display: none;
+}
+
+:root {
+    --menu-count: 6;
+}
+
+.header-main {
+    width: 100%;
+    padding: 0 30px;
+    height: 60px;
+    background-color: #fffdd2;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.header-main nav {
+    display: flex;
+}
+
+.header-main .logo {
+    height: 40px;
+    width: fit-content;
+    align-self: center;
+    cursor: pointer;
+}
+
+.header-main ul {
+    height: 100%;
+    padding-left: 40px;
+    list-style: none;
+    display: flex;
+    align-self: center;
+}
+
+.header-main ul li {
+    position: relative;
+    background-color: #fffdd2;
+
+}
+
+.header-main ul li a {
+    display: block;
+    padding: 0 15px;
+    height: 100%;
+    line-height: 60px;
+    font-size: 1rem;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* DROPDOWN STYLING START */
+
+.header-main ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    position: absolute;
+    left: -40px;
+    transition: all ease-in-out 100ms;
+
+}
+
+.header-main ul li ul li a {
+    white-space: nowrap;
+}
+
+.header-main ul li ul li {
+    margin: 5px;
+    width: 250px;
+    height: 40px;
+    text-align: left;
+    padding: 0px 25px 15px 4px;
+}
+
+ul li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+
+}
+
+/* DROPDOWN STYLING END */
+
+.header-main .left-menu {}
+
+.header-main .search {
+    align-self: center;
+    display: flex;
+    margin-right: 50px;
+}
+
+.header-main form {
+    height: 35px;
+    padding-right: 0px;
+    display: flex;
+    border: 1px solid #AEAEAE;
+    border-radius: 30px 30px 30px 30px;
+    width: fit-content;
+    align-self: center;
+}
+
+.header-main form input {
+    height: 32px;
+    width: 170px;
+    padding: 0 10px 0 10px;
+    border-radius: 0px 30px 30px 0px;
+    font-size: 1rem;
+}
+
+.header-main form input:focus {
+    border: 1px solid #111;
+}
+
+.header-main form button {
+    border-radius: 30px 0px 0px 30px;
+}
+
+.header-main form button img {
+    height: 24px;
+    padding-top: 15%;
+    cursor: pointer;
+
+}
+
+.header-main .account {
+    height: 60px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+/*Top navigation bar CSS START*/
+
+
+
+/*Body CSS START*/
+h1{
+    color: orange;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.row1{
+    display: inline-flex;
+    text-align: center;
+}
+
+.col1{
+    margin:0px 30px 15px 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #c1ba34;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.row1 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.table{
+    text-align: center;
+    margin:0px;
+    padding:0;
+}
+
+.link1, .link2, .link3, .link4, .link5, .link6, .link7, .link8, .link9, .link10, .link11, .link12, .link13, .link14, .link15, .link16, .link17, .link18, .link19, .link20, .link21, .link22, .link23, .link24{
+    text-decoration: none;
+    color: black;
+}
+/*Body CSS  end*/
+
+
+
+/*Navigation bar CSS START*/
+.nav_bar{
+    text-align: center;
+    margin: 60px;
+}
+.nav_bar a {
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav_bar a:hover {
+    background-color:rgb(226, 209, 195);
+    color:rgb(255, 123, 0);
+}
+  
+.nav_bar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+/*Navigation bar CSS START*/
+
+
