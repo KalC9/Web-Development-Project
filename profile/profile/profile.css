@@ -1,0 +1,248 @@
+.pro_card{
+    display: flex;
+}
+.pro_card2{
+    display: flex;
+    align-items: center;
+    margin-left: 350px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.card1 {
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+.card2 {
+    width: 300px;
+    margin: 50px ;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.card1 {
+    margin-bottom: 20px;
+}
+
+.card1n h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color:  #967951;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: #967951;
+  border: 2px solid #967951;
+}
+
+/*---------- FOOTER STYLES START ----------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+.container{
+  width: 100%;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 30px 30px;
+}
+.footer-col{
+   width: 47%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #967951;
+  height: 3px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+  text-wrap: nowrap;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+#appstore {
+  width: 300px;
+  height: 120px;
+  
+}
+#playstore {
+  width: 230px;
+  height: 90px;
+}
+.download {
+  margin-top: -40px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+ .copyrights{
+  display: flex;
+  border-top: 1px solid gray;
+  width:100%;
+  margin:10px auto 0px auto;
+  padding-top: 10px;
+  color:gray;
+  font-size:0.8em;
+  justify-content: space-between;
+  }
+
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+  
+ .right a {
+  text-decoration: none;
+  color: gray;
+  padding-right: 10px;
+ }
+
+/*---------- FOOTER STYLES END ----------*/
+
+
+.back {
+  width: 45px;
+  height: 45px;
+  background: #967951;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  margin: 20px auto auto 30px;
+}
+
+.arrow path {
+  fill:white;
+}
+
+.back:hover>.arrow path {
+  fill:#967951;
+}
+
+.text {
+  font-size: 0.7em;
+  width: 100px;
+  position: absolute;
+  color: #51422d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -24px;
+  opacity: 0;
+  transition-duration: .7s;
+}
+
+.back:hover .text {
+  opacity: 1;
+  transition-duration: .7s;
+}
+
+.back:hover .arrow {
+  animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
