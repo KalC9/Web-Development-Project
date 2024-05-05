@@ -1,0 +1,333 @@
+/* Top navigation bar CSS START
+.mobile-menu-btn {
+    display: none;
+}
+
+:root {
+    --menu-count: 6;
+}
+
+.header-main {
+    width: 100%;
+    padding: 0 30px;
+    height: 60px;
+    background-color: #fffdd2;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.header-main nav {
+    display: flex;
+}
+
+.header-main .logo {
+    height: 40px;
+    width: fit-content;
+    align-self: center;
+    cursor: pointer;
+}
+
+.header-main ul {
+    height: 100%;
+    padding-left: 40px;
+    list-style: none;
+    display: flex;
+    align-self: center;
+}
+
+.header-main ul li {
+    position: relative;
+    background-color: #fffdd2;
+
+}
+
+.header-main ul li a {
+    display: block;
+    padding: 0 15px;
+    height: 100%;
+    line-height: 60px;
+    font-size: 1rem;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* DROPDOWN STYLING START */
+
+/* .header-main ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    position: absolute;
+    left: -40px;
+    transition: all ease-in-out 100ms;
+
+}
+
+.header-main ul li ul li a {
+    white-space: nowrap;
+}
+
+.header-main ul li ul li {
+    margin: 5px;
+    width: 250px;
+    height: 40px;
+    text-align: left;
+    padding: 0px 25px 15px 4px;
+}
+
+ul li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+
+} */ */
+
+/* DROPDOWN STYLING END */
+
+/* .header-main .left-menu {}
+
+.header-main .search {
+    align-self: center;
+    display: flex;
+    margin-right: 50px;
+}
+
+.header-main form {
+    height: 35px;
+    padding-right: 0px;
+    display: flex;
+    border: 1px solid #AEAEAE;
+    border-radius: 30px 30px 30px 30px;
+    width: fit-content;
+    align-self: center;
+}
+
+.header-main form input {
+    height: 32px;
+    width: 170px;
+    padding: 0 10px 0 10px;
+    border-radius: 0px 30px 30px 0px;
+    font-size: 1rem;
+}
+
+.header-main form input:focus {
+    border: 1px solid #111;
+}
+
+.header-main form button {
+    border-radius: 30px 0px 0px 30px;
+}
+
+.header-main form button img {
+    height: 24px;
+    padding-top: 15%;
+    cursor: pointer;
+
+}
+
+.header-main .account {
+    height: 60px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+} */
+/*Top navigation bar CSS START*/
+
+
+
+/*Body CSS START*/
+h1{
+    color: orange;
+    text-align: center;
+   margin: auto;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+
+
+
+  .header-main {
+    width: 100%;
+    margin-bottom: 100px;
+    height: 60px;
+    background-color:  #967951;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    
+}
+
+.menu-items {
+    margin: 0 15px 0 15px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.menu-items li a {
+    color: whitesmoke;
+    font-weight: 500;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .menu-items li {
+    margin: 0;
+    padding: 0;
+   
+  }
+
+.topnav-left {
+    float: left;
+}
+
+.topnav-right {
+    float: right;
+    
+}
+/* 
+
+/----- DROPDOWN LIST STYLING START ------/ */
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 159px;
+    top: 100%;
+    
+    
+}
+
+ .sub-menu li {
+    text-align: left;
+    padding: 13px 16px 5px 5px;
+    color: #1b1919;
+    margin: 8px;
+    width: 250px;
+    height: 30px;
+    list-style: none;
+    background-color:  #967951;
+    top: 100%;
+    
+}
+
+.menu-items li:hover .sub-menu {
+    display: block;
+}
+/* 
+/------- DROPDOWN LIST STYLING END ------/
+
+/--------SEARCH STYLING START -------/ */
+
+.container {
+    position: relative;
+    --size-button: 25PX;
+    color: white;
+    margin-right: 20px;
+    
+  }
+  
+  .input {
+    padding: 2px 3px;
+    height: 35px;
+    font-size: 15px;
+    border: none;
+    color: rgb(0, 0, 0);
+    outline: none;
+    width: 35px;
+    transition: all ease 0.3s;
+    background-color: #967951;
+    
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .input:focus,
+  .input:not(:invalid) {
+    width: 130px;
+    cursor: text;
+    background-color: rgb(198, 198, 198);
+    padding: 2px 40px;
+  }
+  
+  .input:focus + .icon,
+  .input:not(:invalid) + .icon {
+    pointer-events: all;
+    cursor: pointer;
+    
+  }
+  
+  .container .icon {
+    position: absolute;
+    width: var(--size-button);
+    height: var(--size-button);
+    top: 0;
+    left: 0;
+    padding: 8px;
+    pointer-events: none;
+  }
+   
+  .container .icon svg {
+    width: 100%;
+    height: 100%;
+  }
+/* 
+  /-------- SEARCH STYLING END ---------/ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Navigation bar CSS START*/
+.nav_bar{
+    text-align: center;
+    margin: 60px;
+}
+.nav_bar a {
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav_bar a:hover {
+    background-color:rgb(226, 209, 195);
+    color:rgb(255, 123, 0);
+    border-bottom: rgb(255, 123, );
+}
+  
+.nav_bar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+/*Navigation bar CSS START*/
+
+
