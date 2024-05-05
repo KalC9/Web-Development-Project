@@ -7,19 +7,22 @@
     
 
     <link rel="stylesheet" href="login.css">
+    
 </head>
 <body background="bg.jpeg">
+    
     
     <div class="form-container">
 
         <h3>Welcome Back !</h3>
 
         <form class="form">
-            <input type="email" class="input" placeholder="Email">
-            <input type="password" class="input" placeholder="Password">
+            <input type="email" class="input" id="email" onblur="check()" placeholder="Email">
+            <input type="password" class="input" id="pwd" placeholder="Password">
+            <p id="msg"></p>
             <a class="forgot-password" href="#">Forgot Password?</a>
 
-            <button class="logIn-btn">Log In</button>
+            <button class="logIn-btn" >Log In</button>
         </form>
 
         <div class="separator">
@@ -39,5 +42,7 @@
           </p>
     
     </div>
+    <script src="Login .js"></script>
+    
 </body>
 </html>
