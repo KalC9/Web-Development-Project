@@ -1,0 +1,628 @@
+@media only screen and (max-width: 768px) {
+    /* CSS rules for screens up to 768px wide */
+  }
+  
+
+*{
+    margin: 0;
+    
+}
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+
+
+  
+
+  /*----------------------------- TILE  -------------------------------------------*/
+
+
+  .cat h1{
+    text-align: center;
+    color: #E5AF52;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    font-size: 40px;
+  }
+
+  .img1{
+    width: 380px;
+    height: 380px;
+    
+  }
+
+  .cat_sub{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 30px;
+  }
+
+  .cat_sub_text{
+    margin-left: 25px;
+  }
+
+  .cat_sub_text ul {
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+  
+
+  .cat_sub_text ul li{
+    color: #706c69;
+    font-size: 20px;
+    padding: 2px;
+  }
+
+
+  /*-----------------------------------   quantity     -----------------------------------------*/
+  
+  .quantity{
+    display: flex;
+    margin-left: 120px;
+    margin-top: 30px;
+  }
+
+  .btn{
+    width: 25px;
+    height: 25px;
+   
+  }
+
+  .quantity-input{
+    width: 50px;
+    text-align: center;
+  }
+  
+/*-------------------------------    button   ----------------------------------------------------*/
+
+.buttons{
+    margin-left: 120px;
+    margin-top: 70px;
+}
+
+.btn1{
+    margin-right: 25px;
+    width: 200px;
+    height: 40px;
+    background-color: #E4CA9D;
+    border-color: #E4CA9D;
+}
+
+.btn2{
+    width: 200px;
+    height: 40px;
+    background-color: #EFD6BA;
+    border-color: #EFD6BA;
+}
+
+.btn1:hover{
+  background-color: #e6d2b1;
+  border-color: #9e9b94;
+}
+
+.btn2:hover{
+    background-color: #f0e1d0;
+    border-color: #9e9b94;
+}
+
+
+
+/*-------------------------------    recomended   ----------------------------------------------------*/
+
+.recommend{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 20px;
+}
+
+.recommend h1{
+    
+    margin-bottom: 50px;
+    
+    color: #E5AF52;
+    font-size: 30px;
+    text-align: center;
+}
+
+.recommond_sub{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.recommond_sub ul{
+    list-style: none;
+}
+
+.recommond_sub ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+.back1{
+    margin-top: 70px;
+}
+
+.back2{
+    margin-top: 70px;
+    rotate: 180deg;
+}
+
+.back-btn{
+    border: none;
+    background-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+
+
+
+  .header-main {
+    width: 100%;
+    
+    height: 60px;
+    background-color:  #967951;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+   
+    
+}
+
+#logo {
+  width: 65px;
+  height: 55px;
+  
+}
+
+.menu-items {
+    margin: 0 15px 0 15px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+   
+}
+
+.menu-items li a {
+    color: whitesmoke;
+    font-weight: 500;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    
+  }
+
+  .menu-items li {
+    margin: 0;
+    padding: 0;
+   
+  }
+
+.topnav-left {
+    float: left;
+    
+}
+
+.topnav-right {
+    float: right;
+    
+}
+
+
+/*----- DROPDOWN LIST STYLING START ------*/
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 159px;
+    top: 100%;
+    
+    
+}
+
+ .sub-menu li {
+    text-align: left;
+    padding: 13px 16px 5px 5px;
+    color: #1b1919;
+    margin: 8px;
+    width: 250px;
+    height: 30px;
+    list-style: none;
+    background-color:  #967951;
+    top: 100%;
+    
+}
+
+.menu-items li:hover .sub-menu {
+    display: block;
+}
+
+/*------- DROPDOWN LIST STYLING END ------*/
+
+/*--------SEARCH STYLING START -------*/
+
+.container {
+    position: relative;
+    --size-button: 25PX;
+    color: white;
+    margin-right: 20px;
+    
+  }
+  
+  .input {
+    padding: 2px 3px;
+    height: 35px;
+    font-size: 15px;
+    border: none;
+    color: rgb(0, 0, 0);
+    outline: none;
+    width: 35px;
+    transition: all ease 0.3s;
+    background-color: #967951;
+    
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .input:focus,
+  .input:not(:invalid) {
+    width: 130px;
+    cursor: text;
+    background-color: rgb(198, 198, 198);
+    padding: 2px 40px;
+  }
+  
+  .input:focus + .icon,
+  .input:not(:invalid) + .icon {
+    pointer-events: all;
+    cursor: pointer;
+    
+  }
+  
+  .container .icon {
+    position: absolute;
+    width: var(--size-button);
+    height: var(--size-button);
+    top: 0;
+    left: 0;
+    padding: 8px;
+    pointer-events: none;
+  }
+   
+  .container .icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  /*-------- SEARCH STYLING END ---------*/
+
+
+
+/*Body CSS START*/
+h1{
+    color: orange;
+    text-align: center;
+   margin: auto;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+
+
+
+  .header-main {
+    width: 100%;
+    margin-bottom: 100px;
+    height: 60px;
+    background-color:  #967951;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    
+}
+
+.menu-items {
+    margin: 0 15px 0 15px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.menu-items li a {
+    color: whitesmoke;
+    font-weight: 500;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .menu-items li {
+    margin: 0;
+    padding: 0;
+   
+  }
+
+.topnav-left {
+    float: left;
+}
+
+.topnav-right {
+    float: right;
+    
+}
+/* 
+
+/----- DROPDOWN LIST STYLING START ------/ */
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 159px;
+    top: 100%;
+    
+    
+}
+
+ .sub-menu li {
+    text-align: left;
+    padding: 13px 16px 5px 5px;
+    color: #1b1919;
+    margin: 8px;
+    width: 250px;
+    height: 30px;
+    list-style: none;
+    background-color:  #967951;
+    top: 100%;
+    
+}
+
+.menu-items li:hover .sub-menu {
+    display: block;
+}
+/* 
+/------- DROPDOWN LIST STYLING END ------/
+
+/--------SEARCH STYLING START -------/ */
+
+.container {
+    position: relative;
+    --size-button: 25PX;
+    color: white;
+    margin-right: 20px;
+    
+  }
+  
+  .input {
+    padding: 2px 3px;
+    height: 35px;
+    font-size: 15px;
+    border: none;
+    color: rgb(0, 0, 0);
+    outline: none;
+    width: 35px;
+    transition: all ease 0.3s;
+    background-color: #967951;
+    
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .input:focus,
+  .input:not(:invalid) {
+    width: 130px;
+    cursor: text;
+    background-color: rgb(198, 198, 198);
+    padding: 2px 40px;
+  }
+  
+  .input:focus + .icon,
+  .input:not(:invalid) + .icon {
+    pointer-events: all;
+    cursor: pointer;
+    
+  }
+  
+  .container .icon {
+    position: absolute;
+    width: var(--size-button);
+    height: var(--size-button);
+    top: 0;
+    left: 0;
+    padding: 8px;
+    pointer-events: none;
+  }
+   
+  .container .icon svg {
+    width: 100%;
+    height: 100%;
+  }
+/* 
+  /-------- SEARCH STYLING END ---------/ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Navigation bar CSS START*/
+.nav_bar{
+    text-align: center;
+    margin: 60px;
+}
+.nav_bar a {
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav_bar a:hover {
+    background-color:rgb(226, 209, 195);
+    color:rgb(255, 123, 0);
+    border-bottom: rgb(255, 123, );
+}
+  
+.nav_bar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+/*Navigation bar CSS START*/
+
+
+/*---------- FOOTER STYLES START ----------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+.container{
+  width: 100%;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 30px 30px;
+}
+.footer-col{
+   width: 47%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #967951;
+  height: 3px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+  text-wrap: nowrap;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+#appstore {
+  width: 300px;
+  height: 120px;
+  
+}
+#playstore {
+  width: 230px;
+  height: 90px;
+}
+.download {
+  margin-top: -40px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+ .copyrights{
+  display: flex;
+  border-top: 1px solid gray;
+  width:100%;
+  margin:10px auto 0px auto;
+  padding-top: 10px;
+  color:gray;
+  font-size:0.8em;
+  justify-content: space-between;
+  }
+
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+  
+ .right a {
+  text-decoration: none;
+  color: gray;
+  padding-right: 10px;
+ }
+
+/*---------- FOOTER STYLES END ----------*/
