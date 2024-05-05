@@ -65,9 +65,9 @@
                 </ul>
                 <div class="quantity">
                     <h3 style="color: #706c69; margin-right: 20px;">Quantity :   </h3>
-                    <button class="btn">-</button>
-                    <input type="text" class="quantity-input" value="1">
-                    <button class="btn">+</button>
+                    <button class="btn" onclick="decreaseQuantity()">-</button>
+                    <input type="text" class="quantity-input" value="1" id="quantity">
+                    <button class="btn" onclick="increaseQuantity()">+</button>
                   </div>
                   <div class="buttons">
                         <button class="btn1">ADD TO CART</button>
@@ -144,5 +144,24 @@
             </div>
         </div>
     </footer>
+
+
+    <script>
+        function increaseQuantity() {
+            var quantityInput = document.getElementById('quantity');
+            var currentValue = parseInt(quantityInput.value);
+            quantityInput.value = currentValue + 1;
+        }
+
+        function decreaseQuantity() {
+            var quantityInput = document.getElementById('quantity');
+            var currentValue = parseInt(quantityInput.value);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+            }
+        }
+    </script>
+
+
 </body>
 </html>

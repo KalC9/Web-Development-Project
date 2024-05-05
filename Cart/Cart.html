@@ -57,11 +57,12 @@
         <td><img src="1661170883335163250965.jpg" width="100px" height="100px"></td>
         <td>Product Name: CARRARA WHITE<br>Product Code: 1TJ.PL</td>
         <td>Prize : Rs. 900 /=</td>
-        <td><div class="quantity">
-            <button class="btn">-</button>
-            <input type="text" class="quantity-input" value="1">
-            <button class="btn">+</button>
-          </div>
+        <td>
+            <div class="quantity">
+                <button class="btn" onclick="decreaseQuantity('quantity1')">-</button>
+                <input type="text" class="quantity-input" value="1" id="quantity1">
+                <button class="btn" onclick="increaseQuantity('quantity1')">+</button>
+            </div>
         </td>
         <td><div class="buttons">
             <button class="btn2">BUY NOW</button>
@@ -74,11 +75,13 @@
         <td>Product Name: INFINITY WASH BASIN (WITH TAPHOLE)<br>
             Product Code: 1WO.PZ</td>
         <td>Prize : Rs. 23 000 /=</td>
-        <td><div class="quantity">
-            <button class="btn">-</button>
-            <input type="text" class="quantity-input" value="1">
-            <button class="btn">+</button>
-          </div></td>
+        <td>
+            <div class="quantity">
+                <button class="btn" onclick="decreaseQuantity('quantity2')">-</button>
+                <input type="text" class="quantity-input" value="1" id="quantity2">
+                <button class="btn" onclick="increaseQuantity('quantity2')">+</button>
+            </div>
+        </td>
         <td><div class="buttons">
             <button class="btn2">BUY NOW</button>
       </div></td>
@@ -89,11 +92,13 @@
         <td><img src="3.png" width="100px" height="100px"></td>
         <td>Product Name : RUSTIC DARK GREY<br>Product Code: 5TJ.AS</td>
         <td>Prize : Rs. 1100 /=</td>
-        <td><div class="quantity">
-            <button class="btn">-</button>
-            <input type="text" class="quantity-input" value="1">
-            <button class="btn">+</button>
-          </div></td>
+        <td>
+            <div class="quantity">
+                <button class="btn" onclick="decreaseQuantity('quantity3')">-</button>
+                <input type="text" class="quantity-input" value="1" id="quantity3">
+                <button class="btn" onclick="increaseQuantity('quantity3')">+</button>
+            </div>
+        </td>
         <td><div class="buttons">
             <button class="btn2">BUY NOW</button>
       </div></td>
@@ -104,11 +109,13 @@
         <td><img src="bw2.jpg" width="100px" height="100px"></td>
         <td>Product Name : BASIN MIXER<br>Product Code: 6TQ.CV</td>
         <td>Prize : Rs. 700 /=</td>
-        <td><div class="quantity">
-            <button class="btn">-</button>
-            <input type="text" class="quantity-input" value="1">
-            <button class="btn">+</button>
-          </div></td>
+        <td>
+            <div class="quantity">
+                <button class="btn" onclick="decreaseQuantity('quantity4')">-</button>
+                <input type="text" class="quantity-input" value="1" id="quantity4">
+                <button class="btn" onclick="increaseQuantity('quantity4')">+</button>
+            </div>
+        </td>
         <td><div class="buttons">
             <button class="btn2">BUY NOW</button>
       </div></td>
@@ -116,8 +123,21 @@
     </tr>
 </table>
 </div>
+<script>
+function increaseQuantity(id) {
+    var quantityInput = document.getElementById(id);
+    var currentValue = parseInt(quantityInput.value);
+    quantityInput.value = currentValue + 1;
+}
 
-
+function decreaseQuantity(id) {
+    var quantityInput = document.getElementById(id);
+    var currentValue = parseInt(quantityInput.value);
+    if (currentValue > 1) {
+        quantityInput.value = currentValue - 1;
+    }
+}
+</script>
 
 
 
