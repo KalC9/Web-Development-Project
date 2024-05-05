@@ -243,3 +243,10 @@ h3 {
     font-weight: 900;
     font-style: italic;
   }
+
+
+  #msg1, #msg2{
+    color:red;   /* Error message */
+  }
+
+ 
