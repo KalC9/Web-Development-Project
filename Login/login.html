@@ -17,9 +17,10 @@
         <h3>Welcome Back !</h3>
 
         <form class="form">
-            <input type="email" class="input" id="email" onblur="check()" placeholder="Email">
-            <input type="password" class="input" id="pwd" placeholder="Password">
-            <p id="msg"></p>
+            <input type="email" class="input" id="email" onblur="checkEmail()" placeholder="Email">
+            <p id="msg1"></p>
+            <input type="password" class="input" id="pwd" onblur="checkPwd()" placeholder="Password">
+            <p id="msg2"></p>
             <a class="forgot-password" href="#">Forgot Password?</a>
 
             <button class="logIn-btn" >Log In</button>
