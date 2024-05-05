@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View my cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<body>
+    <header class="header-main">
+        
+        <div class="topnav-left">
+            <ul class="menu-items">
+                <li><a href="#"><img id="logo" src="logo.png" alt="Logo"></a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#home">Products</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Tile collection</a></li>
+                        <li><a href="">Bathware collection</a></li>
+                        <li><a href="">Accesseries collection</a></li>
+                    </ul>
+                </li>  
+                <li><a href="">About Us</a></li> 
+            </ul>       
+        </div>  
+        <div class="topnav-right">
+            <ul class="menu-items">
+                <li>
+                    <div class="container">
+                        <input type="text" name="text" class="input" required="" >
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <title>Search</title>
+                                <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="cart.html"><img src="cart.png" width="24px" height="24px"></a></li>
+                <li><a href="profile.html"><img src="user.png" width="24px" height="24px"></a></li>  
+            </ul>
+        </div>        
+    </header>
+   
+
+<!--  Cart Start  -->
+
+<div class="main-cart">
+    <h2 style="color: #E5AF52; text-align: center; margin-bottom: 50px;">MY CART</h2>
+<table class="main-cart-table">
+    <tr>
+        <td><input type="checkbox" id="item" name="item" value="item1"></td>
+        <td><img src="1661170883335163250965.jpg" width="100px" height="100px"></td>
+        <td>Product Name: CARRARA WHITE<br>Product Code: 1TJ.PL</td>
+        <td>Prize : Rs. 900 /=</td>
+        <td>
+            <div class="quantity">
+                <button class="btn" onclick="decreaseQuantity('quantity1')">-</button>
+                <input type="text" class="quantity-input" value="1" id="quantity1">
+                <button class="btn" onclick="increaseQuantity('quantity1')">+</button>
+            </div>
+        </td>
+        <td><div class="buttons">
+            <button class="btn2">BUY NOW</button>
+      </div></td>
+        <td><button style="border: none;"><img src="delete.png" width="20px" height="20px"></button></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="item" name="item" value="item1"></td>
+        <td><img src="2.jpeg" width="100px" height="100px"></td>
+        <td>Product Name: INFINITY WASH BASIN (WITH TAPHOLE)<br>
+            Product Code: 1WO.PZ</td>
+        <td>Prize : Rs. 23 000 /=</td>
+        <td>
+            <div class="quantity">
+                <button class="btn" onclick="decreaseQuantity('quantity2')">-</button>
+                <input type="text" class="quantity-input" value="1" id="quantity2">
+                <button class="btn" onclick="increaseQuantity('quantity2')">+</button>
+            </div>
+        </td>
+        <td><div class="buttons">
+            <button class="btn2">BUY NOW</button>
+      </div></td>
+        <td><button style="border: none;"><img src="delete.png" width="20px" height="20px"></button></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="item" name="item" value="item1"></td>
+        <td><img src="3.png" width="100px" height="100px"></td>
+        <td>Product Name : RUSTIC DARK GREY<br>Product Code: 5TJ.AS</td>
+        <td>Prize : Rs. 1100 /=</td>
+        <td>
+            <div class="quantity">
+                <button class="btn" onclick="decreaseQuantity('quantity3')">-</button>
+                <input type="text" class="quantity-input" value="1" id="quantity3">
+                <button class="btn" onclick="increaseQuantity('quantity3')">+</button>
+            </div>
+        </td>
+        <td><div class="buttons">
+            <button class="btn2">BUY NOW</button>
+      </div></td>
+        <td><button style="border: none;"><img src="delete.png" width="20px" height="20px"></button></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="item" name="item" value="item1"></td>
+        <td><img src="bw2.jpg" width="100px" height="100px"></td>
+        <td>Product Name : BASIN MIXER<br>Product Code: 6TQ.CV</td>
+        <td>Prize : Rs. 700 /=</td>
+        <td>
+            <div class="quantity">
+                <button class="btn" onclick="decreaseQuantity('quantity4')">-</button>
+                <input type="text" class="quantity-input" value="1" id="quantity4">
+                <button class="btn" onclick="increaseQuantity('quantity4')">+</button>
+            </div>
+        </td>
+        <td><div class="buttons">
+            <button class="btn2">BUY NOW</button>
+      </div></td>
+        <td><button style="border: none;"><img src="delete.png" width="20px" height="20px"></button></td>
+    </tr>
+</table>
+</div>
+<script>
+function increaseQuantity(id) {
+    var quantityInput = document.getElementById(id);
+    var currentValue = parseInt(quantityInput.value);
+    quantityInput.value = currentValue + 1;
+}
+
+function decreaseQuantity(id) {
+    var quantityInput = document.getElementById(id);
+    var currentValue = parseInt(quantityInput.value);
+    if (currentValue > 1) {
+        quantityInput.value = currentValue - 1;
+    }
+}
+</script>
+
+
+
+
+
+
+
+ <!-- FOOTER START -->
+
+ <footer class="footer">
+    <div class="container">
+     <div class="row">
+       <div class="footer-col">
+         <h4>Contact Us</h4>
+         <ul>
+           <li><a href="#">Address: No.325 High Level Road, Nugegoda</a></li>
+           <li><a href="#">Mobile: 0777626292</a></li>
+           <li><a href="#">E-mail: LearningLinkFoundation@gmail.com</a></li>
+           
+         </ul>
+       </div>
+       
+       <div class="footer-col">
+         <h4>Download now</h4>
+            <div  class="download">
+                <div class="inline-block"><a href=""><img id="playstore" src="playstore.png"></a></div> 
+                <div class="inline-block"><a href=""><img  id="appstore" src="appstore.png"></a></div>
+            </div>
+           
+         
+       </div>
+       <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+       </div>
+     </div>
+    </div>
+    <div class="copyrights">
+        <div class="left">© 2024 LerningLinkFoundation.com Pty Ltd. All rights reserved.</div>
+        <div class="right"><a href="">Terms of Service</a>  
+            <a href="">Privacy Policy</a> 
+        </div>
+    </div>
+ </footer>
+
+<!-- FOOTER END -->
+</body>
+</html>
