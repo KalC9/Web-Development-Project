@@ -210,12 +210,12 @@
     height: 35px;
     font-size: 15px;
     border: none;
-    color: rgb(0, 0, 0);
+    color: rgb(36, 34, 34);
     outline: none;
     width: 35px;
     transition: all ease 0.3s;
     background-color: #967951;
-    
+    opacity: 40%;
     border-radius: 15px;
     cursor: pointer;
   }
@@ -224,7 +224,7 @@
   .input:not(:invalid) {
     width: 130px;
     cursor: text;
-    background-color: rgb(198, 198, 198);
+    background-color: rgb(241, 199, 144);
     padding: 2px 40px;
   }
   
