@@ -1,0 +1,57 @@
+.tile_sec1 {
+    display: flex;
+    justify-content: center;  /* Centers the tile in the parent container */
+    align-items: center;
+    padding: 20px;  /* Added some padding for spacing */
+}
+
+.tile_grid1 {
+    background-color: rgba(153, 121, 82, 0.5);
+    padding: 10px;
+    text-align: center;
+    transition: height 0.3s ease-in-out;
+}
+
+.tile {
+    margin-bottom: 10px;
+}
+
+.tile_img img {
+    width: 240px;
+    height: 230px;
+    transition: transform 0.2s;
+}
+
+.tile_img img:hover {
+    transform: scale(0.95);
+}
+
+.tile_title {
+    text-align: center;
+}
+
+.hover_background {
+    width: 240px;
+    height: 40px;  /* Initially only the title is visible */
+    background-color: rgba(0, 0, 0, 0.5);  /* Transparent background */
+    transition: height 0.3s ease-in-out;  /* Smooth transition */
+}
+
+.tile_grid1:hover .hover_background {
+    height: 80px;  /* Expand to reveal the hidden text */
+}
+
+.title {
+    color: brown;
+    font-size: 20px;
+}
+
+.hidden_text {
+    display: none;
+}
+
+.tile_grid1:hover .hidden_text {
+    display: block;  /* Revealed on hover */
+    color: white;  /* Text color over the dark background */
+    font-size: 16px;
+}
