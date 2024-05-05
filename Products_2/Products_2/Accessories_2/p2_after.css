@@ -1,0 +1,344 @@
+@media only screen and (max-width: 768px) {
+    /* CSS rules for screens up to 768px wide */
+  }
+  
+
+*{
+    margin: 0;
+    
+}
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+
+/*------------------------    nav bar  -----------------------------------------*/
+
+
+.mobile-menu-btn {
+    display: none;
+}
+
+:root {
+    --menu-count: 6;
+}
+
+.header-main {
+    width: 100%;
+    padding: 0 30px;
+    height: 60px;
+    background-color: #fffdd2;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.header-main nav {
+    display: flex;
+}
+
+.header-main .logo {
+    height: 40px;
+    width: fit-content;
+    align-self: center;
+    cursor: pointer;
+}
+
+.header-main ul {
+    height: 100%;
+    padding-left: 40px;
+    list-style: none;
+    display: flex;
+    align-self: center;
+}
+
+.header-main ul li {
+    position: relative;
+    background-color: #fffdd2;
+
+}
+
+.header-main ul li a {
+    display: block;
+    padding: 0 15px;
+    height: 100%;
+    line-height: 60px;
+    font-size: 1rem;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* DROPDOWN STYLING START */
+
+.header-main ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    position: absolute;
+    left: -40px;
+    transition: all ease-in-out 100ms;
+
+}
+
+.header-main ul li ul li a {
+    white-space: nowrap;
+}
+
+.header-main ul li ul li {
+    margin: 5px;
+    width: 250px;
+    height: 40px;
+    text-align: left;
+    padding: 0px 25px 15px 4px;
+}
+
+ul li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+
+}
+
+/* DROPDOWN STYLING END */
+
+.header-main .left-menu {}
+
+.header-main .search {
+    align-self: center;
+    display: flex;
+    margin-right: 50px;
+}
+
+.header-main form {
+    height: 35px;
+    padding-right: 0px;
+    display: flex;
+    border: 1px solid #AEAEAE;
+    border-radius: 30px 30px 30px 30px;
+    width: fit-content;
+    align-self: center;
+}
+
+.header-main form input {
+    height: 32px;
+    width: 170px;
+    padding: 0 10px 0 10px;
+    border-radius: 0px 30px 30px 0px;
+    font-size: 1rem;
+}
+
+.header-main form input:focus {
+    border: 1px solid #111;
+}
+
+.header-main form button {
+    border-radius: 30px 0px 0px 30px;
+}
+
+.header-main form button img {
+    height: 24px;
+    padding-top: 15%;
+    cursor: pointer;
+
+}
+
+.header-main .account {
+    height: 60px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+  
+  
+
+  /*----------------------------- TILE  -------------------------------------------*/
+
+
+  .cat h1{
+    text-align: center;
+    color: #b6aea1;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    font-size: 40px;
+  }
+
+  .img1{
+    width: 380px;
+    height: 380px;
+    
+  }
+
+  .cat_sub{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 30px;
+  }
+
+  .cat_sub_text{
+    margin-left: 25px;
+  }
+
+  .cat_sub_text ul {
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+  
+
+  .cat_sub_text ul li{
+    color: #706c69;
+    font-size: 20px;
+    padding: 2px;
+  }
+
+
+  /*-----------------------------------   quantity     -----------------------------------------*/
+  
+  .quantity{
+    display: flex;
+    margin-left: 120px;
+    margin-top: 30px;
+  }
+
+  .btn{
+    width: 25px;
+    height: 25px;
+   
+  }
+
+  .quantity-input{
+    width: 50px;
+    text-align: center;
+  }
+  
+/*-------------------------------    button   ----------------------------------------------------*/
+
+.buttons{
+    margin-left: 120px;
+    margin-top: 70px;
+}
+
+.btn1{
+    margin-right: 25px;
+    width: 200px;
+    height: 40px;
+    background-color: #afaba3;
+    border-color: #afaba3;
+}
+
+.btn2{
+    width: 200px;
+    height: 40px;
+    background-color: #d1cac1;
+    border-color: #d1cac1;
+}
+
+.btn1:hover{
+  background-color: #928f89;
+  border-color: #9e9b94;
+}
+
+.btn2:hover{
+    background-color: #beb9b1;
+    border-color: #9e9b94;
+}
+
+
+
+/*-------------------------------    recomended   ----------------------------------------------------*/
+
+.recommend{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 20px;
+}
+
+.recommend h1{
+    
+    margin-bottom: 50px;
+    
+    color: #b6aea1;
+    font-size: 30px;
+    text-align: center;
+}
+
+.recommond_sub{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.recommond_sub ul{
+    list-style: none;
+}
+
+
+
+.back1{
+    margin-top: 70px;
+}
+
+.back2{
+    margin-top: 70px;
+    rotate: 180deg;
+}
+
+.back-btn{
+    border: none;
+    background-color: #ffffff;
+}
+
+/*------------------------------    footer      --------------------------------------------*/
+
+.main_footer{
+    display: flex;
+    margin-top: 200px;
+    background-color: #e6ddd0;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    
+}
+
+.main_footer ul{
+    list-style: none;
+}
+
+.left ul li{
+    padding-top: 8px;
+    color: #3f3d3b;
+}
+
+.right{
+    
+    margin-top: 30px;
+}
+
+.right ul {
+    display: flex;   
+}
+
+.follow{
+    color: #3f3d3b;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+.mid{
+    padding-left: 200px;
+    padding-right: 200px;
+    
+}
+
+.mid ul li{
+    padding-top: 8px;
+    color: #3f3d3b;
+}
+
+footer{
+    justify-content: center;
+}
