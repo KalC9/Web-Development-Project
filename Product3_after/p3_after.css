@@ -162,7 +162,7 @@ ul li:hover>ul {
 
   .cat h1{
     text-align: center;
-    color: #b6aea1;
+    color: #E5AF52;
     margin-top: 120px;
     margin-bottom: 50px;
     font-size: 40px;
@@ -227,24 +227,24 @@ ul li:hover>ul {
     margin-right: 25px;
     width: 200px;
     height: 40px;
-    background-color: #afaba3;
-    border-color: #afaba3;
+    background-color: #E4CA9D;
+    border-color: #E4CA9D;
 }
 
 .btn2{
     width: 200px;
     height: 40px;
-    background-color: #d1cac1;
-    border-color: #d1cac1;
+    background-color: #EFD6BA;
+    border-color: #EFD6BA;
 }
 
 .btn1:hover{
-  background-color: #928f89;
+  background-color: #e6d2b1;
   border-color: #9e9b94;
 }
 
 .btn2:hover{
-    background-color: #beb9b1;
+    background-color: #f0e1d0;
     border-color: #9e9b94;
 }
 
@@ -262,7 +262,7 @@ ul li:hover>ul {
     
     margin-bottom: 50px;
     
-    color: #b6aea1;
+    color: #E5AF52;
     font-size: 30px;
     text-align: center;
 }
@@ -275,6 +275,11 @@ ul li:hover>ul {
 
 .recommond_sub ul{
     list-style: none;
+}
+
+.recommond_sub ul li a{
+    text-decoration: none;
+    color: #000000;
 }
 
 

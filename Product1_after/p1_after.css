@@ -106,13 +106,14 @@ ul li:hover>ul {
     align-self: center;
     display: flex;
     margin-right: 50px;
+    
 }
 
 .header-main form {
     height: 35px;
     padding-right: 0px;
     display: flex;
-    border: 1px solid #AEAEAE;
+    border: 1px#E5AF52;
     border-radius: 30px 30px 30px 30px;
     width: fit-content;
     align-self: center;
@@ -124,10 +125,12 @@ ul li:hover>ul {
     padding: 0 10px 0 10px;
     border-radius: 0px 30px 30px 0px;
     font-size: 1rem;
+    color: #E5AF52;
+    border-color: #E5AF52;
 }
 
 .header-main form input:focus {
-    border: 1px solid #111;
+    border: 1px solid #E5AF52;
 }
 
 .header-main form button {
@@ -268,6 +271,12 @@ ul li:hover>ul {
 
 .recommond_sub ul{
     list-style: none;
+    
+}
+
+.recommond_sub ul li a{
+    text-decoration: none;
+    color: #000000;   
 }
 
 .back1{
